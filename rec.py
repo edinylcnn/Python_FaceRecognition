@@ -1,5 +1,9 @@
 import cv2
 import numpy as np
+import os
+os.makedirs("./dataset")
+os.makedirs("./recognizer")
+
 
 detector = cv2.CascadeClassifier('haarcascade_frontalface_default.xml');
 cap = cv2.VideoCapture(0)
